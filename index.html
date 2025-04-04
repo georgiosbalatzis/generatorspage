@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerGen Greece - Generator Sales & Rentals</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Navigation -->
+<nav id="navbar">
+    <div class="container">
+        <div class="logo">
+            <h1>PowerGen<span>Greece</span></h1>
+        </div>
+        <div class="nav-toggle" id="navToggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About Us</a></li>
+            <li><a href="#products" class="nav-link">Products</a></li>
+            <li><a href="#services" class="nav-link">Rentals</a></li>
+            <li><a href="#why-us" class="nav-link">Why Choose Us</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+            <li><a href="#" class="btn-primary">Get a Quote</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="hero-content">
+        <h1>Reliable Generator Solutions for Greece</h1>
+        <h2>Sales & Rentals Available Nationwide</h2>
+        <p>Powering businesses and events across the Greek mainland and islands with reliable energy solutions.</p>
+        <div class="hero-buttons">
+            <a href="#products" class="btn-primary">Explore Our Generators</a>
+            <a href="#contact" class="btn-secondary">Contact Us</a>
+        </div>
+    </div>
+</section>
+
+<!-- About Us Section -->
+<section id="about" class="about">
+    <div class="container">
+        <div class="section-header">
+            <h2>About Us</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Your Trusted Power Partner in Greece</h3>
+                <p>Since 2005, PowerGen Greece has been providing high-quality generator solutions to businesses, construction sites, events, and homeowners throughout Greece. Based in Athens with service centers across major islands, we pride ourselves on our technical expertise and commitment to customer satisfaction.</p>
+                <p>Our team of certified engineers and technicians ensures that every generator we sell or rent meets the highest standards of performance and reliability, even in the most challenging environments.</p>
+                <ul class="about-highlights">
+                    <li><i class="fas fa-check-circle"></i> 15+ years of experience in the Greek market</li>
+                    <li><i class="fas fa-check-circle"></i> Nationwide service network</li>
+                    <li><i class="fas fa-check-circle"></i> 24/7 technical support</li>
+                    <li><i class="fas fa-check-circle"></i> Certified maintenance team</li>
+                </ul>
+            </div>
+            <div class="about-image">
+                <img src="/api/placeholder/600/400" alt="PowerGen Greece Team">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Products Section -->
+<section id="products" class="products">
+    <div class="container">
+        <div class="section-header">
+            <h2>Our Generator Products</h2>
+            <div class="underline"></div>
+            <p>Browse our extensive selection of high-quality generators for sale</p>
+        </div>
+        <div class="product-categories">
+            <div class="category-tabs">
+                <button class="tab-btn active" data-category="residential">Residential</button>
+                <button class="tab-btn" data-category="commercial">Commercial</button>
+                <button class="tab-btn" data-category="industrial">Industrial</button>
+                <button class="tab-btn" data-category="portable">Portable</button>
+            </div>
+            <div class="product-grid" id="productGrid">
+                <!-- Residential Generators -->
+                <div class="product-category active" data-category="residential">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="/api/placeholder/300/200" alt="Residential Generator">
+                        </div>
+                        <div class="product-info">
+                            <h3>Home Standby 8kW</h3>
+                            <p>Perfect for small to medium homes, providing essential power during outages.</p>
+                            <ul class="product-specs">
+                                <li><i class="fas fa-bolt"></i> 8kW Power Output</li>
+                                <li><i class="fas fa-gas-pump"></i> LPG/Natural Gas</li>
+                                <li><i class="fas fa-volume-down"></i> Low Noise Level</li>
+                            </ul>
+                            <a href="#" class="btn-secondary">View Details</a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="/api/placeholder/300/200" alt="Residential Generator">
+                        </div>
+                        <div class="product-info">
+                            <h3>Home Standby 15kW</h3>
+                            <p>Comprehensive power backup for larger homes with higher power demands.</p>
+                            <ul class="product-specs">
+                                <li><i class="fas fa-bolt"></i> 15kW Power Output</li>
+                                <li><i class="fas fa-gas-pump"></i> LPG/Natural Gas</li>
+                                <li><i class="fas fa-cog"></i> Automatic Transfer</li>
+                            </ul>
+                            <a href="#" class="btn-secondary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Commercial Generators (Hidden Initially) -->
+                <div class="product-category" data-category="commercial">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="/api/placeholder/300/200" alt="Commercial Generator">
+                        </div>
+                        <div class="product-info">
+                            <h3>Commercial 50kW</h3>
+                            <p>Reliable backup power for small to medium businesses and commercial spaces.</p>
+                            <ul class="product-specs">
+                                <li><i class="fas fa-bolt"></i> 50kW Power Output</li>
+                                <li><i class="fas fa-gas-pump"></i> Diesel</li>
+                                <li><i class="fas fa-shield-alt"></i> Weather-Resistant</li>
+                            </ul>
+                            <a href="#" class="btn-secondary">View Details</a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="/api/placeholder/300/200" alt="Commercial Generator">
+                        </div>
+                        <div class="product-info">
+                            <h3>Commercial 100kW</h3>
+                            <p>High-capacity power solution for larger commercial establishments.</p>
+                            <ul class="product-specs">
+                                <li><i class="fas fa-bolt"></i> 100kW Power Output</li>
+                                <li><i class="fas fa-gas-pump"></i> Diesel</li>
+                                <li><i class="fas fa-clock"></i> Extended Runtime</li>
+                            </ul>
+                            <a href="#" class="btn-secondary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Other categories would be similarly structured -->
+            </div>
+        </div>
+        <div class="view-all-products">
+            <a href="#" class="btn-primary">View All Products</a>
+        </div>
+    </div>
+</section>
+
+<!-- Rental Services Section -->
+<section id="services" class="services">
+    <div class="container">
+        <div class="section-header">
+            <h2>Generator Rental Services</h2>
+            <div class="underline"></div>
+            <p>Flexible rental solutions for any power requirement across Greece</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-building"></i>
+                </div>
+                <h3>Event Power</h3>
+                <p>Reliable power solutions for concerts, festivals, weddings, and corporate events throughout Greece.</p>
+                <ul class="service-features">
+                    <li>Silent operation options</li>
+                    <li>Flexible rental periods</li>
+                    <li>On-site technical support</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-hard-hat"></i>
+                </div>
+                <h3>Construction Sites</h3>
+                <p>Heavy-duty generators for construction projects in remote locations and urban centers.</p>
+                <ul class="service-features">
+                    <li>Rugged, site-ready units</li>
+                    <li>Long-term rental discounts</li>
+                    <li>Delivery and setup included</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-film"></i>
+                </div>
+                <h3>Film & Production</h3>
+                <p>Specialized quiet generators for film and TV production across Greece's scenic locations.</p>
+                <ul class="service-features">
+                    <li>Ultra-quiet operation</li>
+                    <li>Clean power for sensitive equipment</li>
+                    <li>24/7 emergency service</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-home"></i>
+                </div>
+                <h3>Emergency Backup</h3>
+                <p>Short-term solutions for businesses and homes during power outages or grid maintenance.</p>
+                <ul class="service-features">
+                    <li>Rapid deployment</li>
+                    <li>Flexible capacity options</li>
+                    <li>Island delivery available</li>
+                </ul>
+            </div>
+        </div>
+        <div class="rental-cta">
+            <h3>Need a Generator for Your Project?</h3>
+            <p>We offer competitive daily, weekly, and monthly rates with delivery throughout Greece.</p>
+            <a href="#contact" class="btn-primary">Request Rental Quote</a>
+        </div>
+    </div>
+</section>
+
+<!-- Why Choose Us Section -->
+<section id="why-us" class="why-us">
+    <div class="container">
+        <div class="section-header">
+            <h2>Why Choose PowerGen Greece</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="why-us-content">
+            <div class="why-us-grid">
+                <div class="why-us-card">
+                    <div class="why-us-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Our technical support team is available around the clock to assist with any issues or emergencies.</p>
+                </div>
+                <div class="why-us-card">
+                    <div class="why-us-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Maintenance Service</h3>
+                    <p>Comprehensive maintenance plans to keep your generators running at peak performance.</p>
+                </div>
+                <div class="why-us-card">
+                    <div class="why-us-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Nationwide Delivery</h3>
+                    <p>Fast delivery and installation services across the Greek mainland and islands.</p>
+                </div>
+                <div class="why-us-card">
+                    <div class="why-us-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Quality Guarantee</h3>
+                    <p>We only offer top-tier generators from respected global manufacturers with full warranties.</p>
+                </div>
+            </div>
+
+            <!-- Testimonials Slider -->
+            <div class="testimonials">
+                <h3>What Our Clients Say</h3>
+                <div class="testimonial-slider">
+                    <div class="testimonial-slide active">
+                        <div class="testimonial-content">
+                            <p>"PowerGen Greece provided excellent generators for our island resort during peak tourist season. Their service was impeccable, and the equipment never failed despite heavy use."</p>
+                            <div class="testimonial-author">
+                                <h4>Nikos Papadopoulos</h4>
+                                <p>Santorini Paradise Resort</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <p>"When our construction site in remote northern Greece needed reliable power, PowerGen delivered and maintained generators throughout our 8-month project. Highly recommended!"</p>
+                            <div class="testimonial-author">
+                                <h4>Maria Constantinidou</h4>
+                                <p>Athens Construction Ltd</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <p>"The team at PowerGen Greece helped us select the perfect generator for our olive processing facility. Their expertise and after-sales support have been invaluable."</p>
+                            <div class="testimonial-author">
+                                <h4>Georgios Alexandris</h4>
+                                <p>Kalamata Olive Producers</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-controls">
+                    <button class="testimonial-prev"><i class="fas fa-chevron-left"></i></button>
+                    <div class="testimonial-dots">
+                        <span class="dot active" data-slide="0"></span>
+                        <span class="dot" data-slide="1"></span>
+                        <span class="dot" data-slide="2"></span>
+                    </div>
+                    <button class="testimonial-next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+    <div class="container">
+        <div class="section-header">
+            <h2>Contact Us</h2>
+            <div class="underline"></div>
+            <p>Reach out for quotes, support, or information about our generator products and services</p>
+        </div>
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h3>Our Location</h3>
+                        <p>123 Piraeus Avenue, Athens 11854, Greece</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <div>
+                        <h3>Phone Numbers</h3>
+                        <p>Sales: +30 210 123 4567</p>
+                        <p>Rentals: +30 210 123 4568</p>
+                        <p>Support: +30 210 123 4569</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>Email Addresses</h3>
+                        <p>Sales: sales@powergengreece.com</p>
+                        <p>Rentals: rentals@powergengreece.com</p>
+                        <p>Support: support@powergengreece.com</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h3>Business Hours</h3>
+                        <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
+                        <p>Saturday: 9:00 AM - 3:00 PM</p>
+                        <p>Sunday: Closed (Emergency Support Available)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <h3>Send Us a Message</h3>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select an option</option>
+                            <option value="Sales Inquiry">Generator Sales</option>
+                            <option value="Rental Inquiry">Generator Rental</option>
+                            <option value="Technical Support">Technical Support</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+        <div class="map-container">
+            <h3>Find Us</h3>
+            <div class="map">
+                <img src="/api/placeholder/1200/400" alt="Map Location">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>PowerGen<span>Greece</span></h2>
+                <p>Your Trusted Power Partner</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#services">Rental Services</a></li>
+                        <li><a href="#why-us">Why Choose Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Products</h3>
+                    <ul>
+                        <li><a href="#">Residential Generators</a></li>
+                        <li><a href="#">Commercial Generators</a></li>
+                        <li><a href="#">Industrial Generators</a></li>
+                        <li><a href="#">Portable Generators</a></li>
+                        <li><a href="#">Spare Parts</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Generator Rental</a></li>
+                        <li><a href="#">Maintenance Plans</a></li>
+                        <li><a href="#">Installation Services</a></li>
+                        <li><a href="#">Emergency Support</a></li>
+                        <li><a href="#">Consultation</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-social">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+                <div class="newsletter">
+                    <h3>Subscribe to Our Newsletter</h3>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email Address" required>
+                        <button type="submit" class="btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 PowerGen Greece. All Rights Reserved.</p>
+            <div class="footer-legal">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookie Policy</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<a href="#home" class="scroll-to-top" id="scrollToTop">
+    <i class="fas fa-arrow-up"></i>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
