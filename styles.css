@@ -1,8 +1,8 @@
 /* Base Styles */
 :root {
-    --primary-color: #e67e22;
+    --primary-color: #DC143C; /* Changed from #e67e22 (gold/yellow) to #DC143C (crimson red) */
     --secondary-color: #2c3e50;
-    --accent-color: #f39c12;
+    --accent-color: #B22222; /* Changed from #f39c12 (gold/yellow) to #B22222 (darker red) */
     --dark-color: #2c3e50;
     --light-color: #ecf0f1;
     --success-color: #27ae60;
@@ -107,7 +107,7 @@ section {
 }
 
 .btn-primary:hover {
-    background-color: #d35400;
+    background-color: #B22222; /* Changed from #d35400 to #B22222 (darker red) */
     transform: translateY(-3px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -416,7 +416,7 @@ nav .container {
 .service-icon {
     width: 70px;
     height: 70px;
-    background-color: rgba(230, 126, 34, 0.1);
+    background-color: rgba(220, 20, 60, 0.1); /* Changed from rgba(230, 126, 34, 0.1) to rgba for crimson */
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -502,7 +502,7 @@ nav .container {
 .why-us-icon {
     width: 70px;
     height: 70px;
-    background-color: rgba(230, 126, 34, 0.1);
+    background-color: rgba(220, 20, 60, 0.1); /* Changed from rgba(230, 126, 34, 0.1) to rgba for crimson */
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -689,7 +689,7 @@ nav .container {
 .form-group textarea:focus {
     outline: none;
     border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(230, 126, 34, 0.2);
+    box-shadow: 0 0 0 3px rgba(220, 20, 60, 0.2); /* Changed from rgba(230, 126, 34, 0.2) to rgba for crimson */
 }
 
 .map-container {
