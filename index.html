@@ -21,13 +21,16 @@
             <i class="fas fa-bars"></i>
         </div>
         <ul class="nav-links" id="navLinks">
-            <li><a href="#home" class="nav-link">Home</a></li>
-            <li><a href="#about" class="nav-link">About Us</a></li>
-            <li><a href="#products" class="nav-link">Products</a></li>
-            <li><a href="#services" class="nav-link">Rentals</a></li>
-            <li><a href="#why-us" class="nav-link">Why Choose Us</a></li>
-            <li><a href="#contact" class="nav-link">Contact</a></li>
-            <li><a href="#" class="btn-primary">Get a Quote</a></li>
+            <li><a href="#home" class="nav-link" data-i18n="nav-home">Home</a></li>
+            <li><a href="#about" class="nav-link" data-i18n="nav-about">About Us</a></li>
+            <li><a href="#products" class="nav-link" data-i18n="nav-products">Products</a></li>
+            <li><a href="#contact" class="nav-link" data-i18n="nav-contact">Contact</a></li>
+            <li><a href="#" class="btn-primary" data-i18n="nav-quote">Get a Quote</a></li>
+            <li class="language-switch">
+                <a href="#" class="active" data-lang="en">EN</a>
+                <span>/</span>
+                <a href="#" data-lang="gr">GR</a>
+            </li>
         </ul>
     </div>
 </nav>
@@ -35,12 +38,12 @@
 <!-- Hero Section -->
 <section id="home" class="hero">
     <div class="hero-content">
-        <h1>Reliable Generator Solutions for Greece</h1>
-        <h2>Sales & Rentals Available Nationwide</h2>
-        <p>Powering businesses and events across the Greek mainland and islands with reliable energy solutions.</p>
+        <h1 data-i18n="hero-title">Reliable Generator Solutions for Greece</h1>
+        <h2 data-i18n="hero-subtitle">Sales & Rentals Available Nationwide</h2>
+        <p data-i18n="hero-description">Powering businesses and events across the Greek mainland and islands with reliable energy solutions.</p>
         <div class="hero-buttons">
-            <a href="#products" class="btn-primary">Explore Our Generators</a>
-            <a href="#contact" class="btn-secondary">Contact Us</a>
+            <a href="#products" class="btn-primary" data-i18n="hero-explore">Explore Our Generators</a>
+            <a href="#contact" class="btn-secondary" data-i18n="hero-contact">Contact Us</a>
         </div>
     </div>
 </section>
@@ -49,19 +52,19 @@
 <section id="about" class="about">
     <div class="container">
         <div class="section-header">
-            <h2>About Us</h2>
+            <h2 data-i18n="about-title">About Us</h2>
             <div class="underline"></div>
         </div>
         <div class="about-content">
             <div class="about-text">
-                <h3>Your Trusted Power Partner in Greece</h3>
-                <p>Since 2005, Pourtsidis Generators has been providing high-quality generator solutions to businesses, construction sites, events, and homeowners throughout Greece. Based in Athens with service centers across major islands, we pride ourselves on our technical expertise and commitment to customer satisfaction.</p>
-                <p>Our team of certified engineers and technicians ensures that every generator we sell or rent meets the highest standards of performance and reliability, even in the most challenging environments.</p>
+                <h3 data-i18n="about-subtitle">Your Trusted Power Partner in Greece</h3>
+                <p data-i18n="about-p1">Since 2005, Pourtsidis Generators has been providing high-quality generator solutions to businesses, construction sites, events, and homeowners throughout Greece. Based in Athens with service centers across major islands, we pride ourselves on our technical expertise and commitment to customer satisfaction.</p>
+                <p data-i18n="about-p2">Our team of certified engineers and technicians ensures that every generator we sell or rent meets the highest standards of performance and reliability, even in the most challenging environments.</p>
                 <ul class="about-highlights">
-                    <li><i class="fas fa-check-circle"></i> 15+ years of experience in the Greek market</li>
-                    <li><i class="fas fa-check-circle"></i> Nationwide service network</li>
-                    <li><i class="fas fa-check-circle"></i> 24/7 technical support</li>
-                    <li><i class="fas fa-check-circle"></i> Certified maintenance team</li>
+                    <li><i class="fas fa-check-circle"></i> <span data-i18n="about-highlight-1">15+ years of experience in the Greek market</span></li>
+                    <li><i class="fas fa-check-circle"></i> <span data-i18n="about-highlight-2">Nationwide service network</span></li>
+                    <li><i class="fas fa-check-circle"></i> <span data-i18n="about-highlight-3">24/7 technical support</span></li>
+                    <li><i class="fas fa-check-circle"></i> <span data-i18n="about-highlight-4">Certified maintenance team</span></li>
                 </ul>
             </div>
             <div class="about-image">
@@ -75,91 +78,104 @@
 <section id="products" class="products">
     <div class="container">
         <div class="section-header">
-            <h2>Our Generator Products</h2>
+            <h2 data-i18n="products-title">Our Generator Products</h2>
             <div class="underline"></div>
-            <p>Browse our extensive selection of high-quality generators for sale</p>
+            <p data-i18n="products-subtitle">Browse our extensive selection of high-quality generators for sale</p>
         </div>
         <div class="product-categories">
             <div class="category-tabs">
-                <button class="tab-btn active" data-category="residential">Residential</button>
-                <button class="tab-btn" data-category="commercial">Commercial</button>
-                <button class="tab-btn" data-category="industrial">Industrial</button>
-                <button class="tab-btn" data-category="portable">Portable</button>
+                <button class="tab-btn active" data-category="residential" data-i18n="tab-residential">Residential</button>
+                <button class="tab-btn" data-category="commercial" data-i18n="tab-commercial">Commercial</button>
+                <button class="tab-btn" data-category="industrial" data-i18n="tab-industrial">Industrial</button>
+                <button class="tab-btn" data-category="portable" data-i18n="tab-portable">Portable</button>
             </div>
-            <div class="product-grid" id="productGrid">
-                <!-- Residential Generators -->
-                <div class="product-category active" data-category="residential">
-                    <div class="product-card">
-                        <div class="product-image">
-                            <img src="images/1.jpg" alt="Residential Generator">
-                        </div>
-                        <div class="product-info">
-                            <h3>Home Standby 8kW</h3>
-                            <p>Perfect for small to medium homes, providing essential power during outages.</p>
-                            <ul class="product-specs">
-                                <li><i class="fas fa-bolt"></i> 8kW Power Output</li>
-                                <li><i class="fas fa-gas-pump"></i> LPG/Natural Gas</li>
-                                <li><i class="fas fa-volume-down"></i> Low Noise Level</li>
-                            </ul>
-                            <a href="#" class="btn-secondary">View Details</a>
-                        </div>
+
+            <!-- Residential Generators -->
+            <div class="product-category active" data-category="residential">
+                <div class="product-content">
+                    <div class="product-text">
+                        <h3 data-i18n="residential-title">Home Standby Generators</h3>
+                        <p data-i18n="residential-p1">Perfect for small to medium homes, providing essential power during outages. Our residential generators ensure your home stays powered when you need it most.</p>
+                        <p data-i18n="residential-p2">With automatic transfer switches and reliable power output, you'll never have to worry about power interruptions again.</p>
+                        <ul class="product-highlights">
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="residential-highlight-1">8kW to 15kW Power Output</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="residential-highlight-2">LPG/Natural Gas Compatibility</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="residential-highlight-3">Low Noise Operation</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="residential-highlight-4">Automatic Transfer Switches</span></li>
+                        </ul>
+                        <a href="#" class="btn-secondary" data-i18n="residential-view">View Residential Products</a>
                     </div>
-                    <div class="product-card">
-                        <div class="product-image">
-                            <img src="images/2.jpg" alt="Residential Generator">
-                        </div>
-                        <div class="product-info">
-                            <h3>Home Standby 15kW</h3>
-                            <p>Comprehensive power backup for larger homes with higher power demands.</p>
-                            <ul class="product-specs">
-                                <li><i class="fas fa-bolt"></i> 15kW Power Output</li>
-                                <li><i class="fas fa-gas-pump"></i> LPG/Natural Gas</li>
-                                <li><i class="fas fa-cog"></i> Automatic Transfer</li>
-                            </ul>
-                            <a href="#" class="btn-secondary">View Details</a>
-                        </div>
+                    <div class="product-gallery">
+                        <img src="images/1.jpg" alt="Residential Generator">
                     </div>
                 </div>
+            </div>
 
-                <!-- Commercial Generators (Hidden Initially) -->
-                <div class="product-category" data-category="commercial">
-                    <div class="product-card">
-                        <div class="product-image">
-                            <img src="images/3.jpg" alt="Commercial Generator">
-                        </div>
-                        <div class="product-info">
-                            <h3>Commercial 50kW</h3>
-                            <p>Reliable backup power for small to medium businesses and commercial spaces.</p>
-                            <ul class="product-specs">
-                                <li><i class="fas fa-bolt"></i> 50kW Power Output</li>
-                                <li><i class="fas fa-gas-pump"></i> Diesel</li>
-                                <li><i class="fas fa-shield-alt"></i> Weather-Resistant</li>
-                            </ul>
-                            <a href="#" class="btn-secondary">View Details</a>
-                        </div>
+            <!-- Commercial Generators -->
+            <div class="product-category" data-category="commercial">
+                <div class="product-content">
+                    <div class="product-text">
+                        <h3 data-i18n="commercial-title">Commercial Power Solutions</h3>
+                        <p data-i18n="commercial-p1">Reliable backup power for small to medium businesses and commercial spaces. Our commercial generators keep your business running smoothly during power outages.</p>
+                        <p data-i18n="commercial-p2">With extended runtime capabilities and weather-resistant enclosures, these generators are built to perform in any condition.</p>
+                        <ul class="product-highlights">
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="commercial-highlight-1">50kW to 100kW Power Output</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="commercial-highlight-2">Diesel Efficiency</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="commercial-highlight-3">Weather-Resistant Enclosures</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="commercial-highlight-4">Extended Runtime Capabilities</span></li>
+                        </ul>
+                        <a href="#" class="btn-secondary" data-i18n="commercial-view">View Commercial Products</a>
                     </div>
-                    <div class="product-card">
-                        <div class="product-image">
-                            <img src="images/4.jpg" alt="Commercial Generator">
-                        </div>
-                        <div class="product-info">
-                            <h3>Commercial 100kW</h3>
-                            <p>High-capacity power solution for larger commercial establishments.</p>
-                            <ul class="product-specs">
-                                <li><i class="fas fa-bolt"></i> 100kW Power Output</li>
-                                <li><i class="fas fa-gas-pump"></i> Diesel</li>
-                                <li><i class="fas fa-clock"></i> Extended Runtime</li>
-                            </ul>
-                            <a href="#" class="btn-secondary">View Details</a>
-                        </div>
+                    <div class="product-gallery">
+                        <img src="images/3.jpg" alt="Commercial Generator">
                     </div>
                 </div>
+            </div>
 
-                <!-- Other categories would be similarly structured -->
+            <!-- Industrial Generators -->
+            <div class="product-category" data-category="industrial">
+                <div class="product-content">
+                    <div class="product-text">
+                        <h3 data-i18n="industrial-title">Industrial Power Systems</h3>
+                        <p data-i18n="industrial-p1">Heavy-duty generators designed for industrial applications and large-scale operations. Our industrial generators deliver reliable power for factories, data centers, and critical infrastructure.</p>
+                        <p data-i18n="industrial-p2">Engineered for continuous operation and maximum reliability in demanding environments.</p>
+                        <ul class="product-highlights">
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="industrial-highlight-1">150kW to 500kW Power Output</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="industrial-highlight-2">Diesel or Natural Gas Options</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="industrial-highlight-3">Parallel Operation Capability</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="industrial-highlight-4">Advanced Monitoring Systems</span></li>
+                        </ul>
+                        <a href="#" class="btn-secondary" data-i18n="industrial-view">View Industrial Products</a>
+                    </div>
+                    <div class="product-gallery">
+                        <img src="images/4.jpg" alt="Industrial Generator">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Portable Generators -->
+            <div class="product-category" data-category="portable">
+                <div class="product-content">
+                    <div class="product-text">
+                        <h3 data-i18n="portable-title">Portable Power Solutions</h3>
+                        <p data-i18n="portable-p1">Versatile, mobile generators for construction sites, outdoor events, and emergency situations. Our portable generators combine reliability with convenience.</p>
+                        <p data-i18n="portable-p2">Easy to transport and set up, these generators provide power wherever you need it.</p>
+                        <ul class="product-highlights">
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="portable-highlight-1">2kW to 12kW Power Output</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="portable-highlight-2">Gasoline or Dual-Fuel Options</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="portable-highlight-3">Lightweight, Compact Design</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="portable-highlight-4">Electric or Pull-Start Options</span></li>
+                        </ul>
+                        <a href="#" class="btn-secondary" data-i18n="portable-view">View Portable Products</a>
+                    </div>
+                    <div class="product-gallery">
+                        <img src="images/2.jpg" alt="Portable Generator">
+                    </div>
+                </div>
             </div>
         </div>
         <div class="view-all-products">
-            <a href="#" class="btn-primary">View All Products</a>
+            <a href="#" class="btn-primary" data-i18n="view-all">View All Products</a>
         </div>
     </div>
 </section>
@@ -168,57 +184,57 @@
 <section id="services" class="services">
     <div class="container">
         <div class="section-header">
-            <h2>Generator Rental Services</h2>
+            <h2 data-i18n="services-title">Generator Rental Services</h2>
             <div class="underline"></div>
-            <p>Flexible rental solutions for any power requirement across Greece</p>
+            <p data-i18n="services-subtitle">Flexible rental solutions for any power requirement across Greece</p>
         </div>
         <div class="services-grid">
             <div class="service-card">
                 <div class="service-icon">
                     <i class="fas fa-building"></i>
                 </div>
-                <h3>Event Power</h3>
-                <p>Reliable power solutions for concerts, festivals, weddings, and corporate events throughout Greece.</p>
+                <h3 data-i18n="event-title">Event Power</h3>
+                <p data-i18n="event-description">Reliable power solutions for concerts, festivals, weddings, and corporate events throughout Greece.</p>
                 <ul class="service-features">
-                    <li>Silent operation options</li>
-                    <li>Flexible rental periods</li>
-                    <li>On-site technical support</li>
+                    <li data-i18n="event-feature-1">Silent operation options</li>
+                    <li data-i18n="event-feature-2">Flexible rental periods</li>
+                    <li data-i18n="event-feature-3">On-site technical support</li>
                 </ul>
             </div>
             <div class="service-card">
                 <div class="service-icon">
                     <i class="fas fa-hard-hat"></i>
                 </div>
-                <h3>Construction Sites</h3>
-                <p>Heavy-duty generators for construction projects in remote locations and urban centers.</p>
+                <h3 data-i18n="construction-title">Construction Sites</h3>
+                <p data-i18n="construction-description">Heavy-duty generators for construction projects in remote locations and urban centers.</p>
                 <ul class="service-features">
-                    <li>Rugged, site-ready units</li>
-                    <li>Long-term rental discounts</li>
-                    <li>Delivery and setup included</li>
+                    <li data-i18n="construction-feature-1">Rugged, site-ready units</li>
+                    <li data-i18n="construction-feature-2">Long-term rental discounts</li>
+                    <li data-i18n="construction-feature-3">Delivery and setup included</li>
                 </ul>
             </div>
             <div class="service-card">
                 <div class="service-icon">
                     <i class="fas fa-film"></i>
                 </div>
-                <h3>Film & Production</h3>
-                <p>Specialized quiet generators for film and TV production across Greece's scenic locations.</p>
+                <h3 data-i18n="film-title">Film & Production</h3>
+                <p data-i18n="film-description">Specialized quiet generators for film and TV production across Greece's scenic locations.</p>
                 <ul class="service-features">
-                    <li>Ultra-quiet operation</li>
-                    <li>Clean power for sensitive equipment</li>
-                    <li>24/7 emergency service</li>
+                    <li data-i18n="film-feature-1">Ultra-quiet operation</li>
+                    <li data-i18n="film-feature-2">Clean power for sensitive equipment</li>
+                    <li data-i18n="film-feature-3">24/7 emergency service</li>
                 </ul>
             </div>
             <div class="service-card">
                 <div class="service-icon">
                     <i class="fas fa-home"></i>
                 </div>
-                <h3>Emergency Backup</h3>
-                <p>Short-term solutions for businesses and homes during power outages or grid maintenance.</p>
+                <h3 data-i18n="emergency-title">Emergency Backup</h3>
+                <p data-i18n="emergency-description">Short-term solutions for businesses and homes during power outages or grid maintenance.</p>
                 <ul class="service-features">
-                    <li>Rapid deployment</li>
-                    <li>Flexible capacity options</li>
-                    <li>Island delivery available</li>
+                    <li data-i18n="emergency-feature-1">Rapid deployment</li>
+                    <li data-i18n="emergency-feature-2">Flexible capacity options</li>
+                    <li data-i18n="emergency-feature-3">Island delivery available</li>
                 </ul>
             </div>
         </div>
@@ -229,7 +245,7 @@
 <section id="why-us" class="why-us">
     <div class="container">
         <div class="section-header">
-            <h2>Why Choose Pourtsidis Generators</h2>
+            <h2 data-i18n="why-us-title">Why Choose Pourtsidis Generators</h2>
             <div class="underline"></div>
         </div>
         <div class="why-us-content">
@@ -238,29 +254,29 @@
                     <div class="why-us-icon">
                         <i class="fas fa-headset"></i>
                     </div>
-                    <h3>24/7 Support</h3>
-                    <p>Our technical support team is available around the clock to assist with any issues or emergencies.</p>
+                    <h3 data-i18n="support-title">24/7 Support</h3>
+                    <p data-i18n="support-description">Our technical support team is available around the clock to assist with any issues or emergencies.</p>
                 </div>
                 <div class="why-us-card">
                     <div class="why-us-icon">
                         <i class="fas fa-tools"></i>
                     </div>
-                    <h3>Maintenance Service</h3>
-                    <p>Comprehensive maintenance plans to keep your generators running at peak performance.</p>
+                    <h3 data-i18n="maintenance-title">Maintenance Service</h3>
+                    <p data-i18n="maintenance-description">Comprehensive maintenance plans to keep your generators running at peak performance.</p>
                 </div>
                 <div class="why-us-card">
                     <div class="why-us-icon">
                         <i class="fas fa-truck"></i>
                     </div>
-                    <h3>Nationwide Delivery</h3>
-                    <p>Fast delivery and installation services across the Greek mainland and islands.</p>
+                    <h3 data-i18n="delivery-title">Nationwide Delivery</h3>
+                    <p data-i18n="delivery-description">Fast delivery and installation services across the Greek mainland and islands.</p>
                 </div>
                 <div class="why-us-card">
                     <div class="why-us-icon">
                         <i class="fas fa-award"></i>
                     </div>
-                    <h3>Quality Guarantee</h3>
-                    <p>We only offer top-tier generators from respected global manufacturers with full warranties.</p>
+                    <h3 data-i18n="quality-title">Quality Guarantee</h3>
+                    <p data-i18n="quality-description">We only offer top-tier generators from respected global manufacturers with full warranties.</p>
                 </div>
             </div>
         </div>
@@ -271,23 +287,23 @@
 <section id="contact" class="contact">
     <div class="container">
         <div class="section-header">
-            <h2>Contact Us</h2>
+            <h2 data-i18n="contact-title">Contact Us</h2>
             <div class="underline"></div>
-            <p>Reach out for quotes, support, or information about our generator products and services</p>
+            <p data-i18n="contact-subtitle">Reach out for quotes, support, or information about our generator products and services</p>
         </div>
         <div class="contact-content">
             <div class="contact-info">
                 <div class="info-item">
                     <i class="fas fa-map-marker-alt"></i>
                     <div>
-                        <h3>Our Location</h3>
+                        <h3 data-i18n="location-title">Our Location</h3>
                         <p>13ο χλμ. Π.Ε.Ο Κατερινης-Θεσ/νικης, Kitros 60064, Greece</p>
                     </div>
                 </div>
                 <div class="info-item">
                     <i class="fas fa-phone-alt"></i>
                     <div>
-                        <h3>Phone Numbers</h3>
+                        <h3 data-i18n="phone-title">Phone Numbers</h3>
                         <p>+30 2351 600824</p>
                         <p>+30 6977 831465</p>
                         <p>+30 6977 634666 </p>
@@ -296,55 +312,55 @@
                 <div class="info-item">
                     <i class="fas fa-envelope"></i>
                     <div>
-                        <h3>Email Addresses</h3>
-                        <p>Sales: dimitrispourtsidis@yahoo.gr</p>
+                        <h3 data-i18n="email-title">Email Addresses</h3>
+                        <p data-i18n="email-sales">Sales: dimitrispourtsidis@yahoo.gr</p>
                     </div>
                 </div>
                 <div class="info-item">
                     <i class="fas fa-clock"></i>
                     <div>
-                        <h3>Business Hours</h3>
-                        <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
-                        <p>Saturday: 9:00 AM - 3:00 PM</p>
-                        <p>Sunday: Closed (Emergency Support Available)</p>
+                        <h3 data-i18n="hours-title">Business Hours</h3>
+                        <p data-i18n="hours-weekday">Monday - Friday: 8:00 AM - 6:00 PM</p>
+                        <p data-i18n="hours-saturday">Saturday: 9:00 AM - 3:00 PM</p>
+                        <p data-i18n="hours-sunday">Sunday: Closed (Emergency Support Available)</p>
                     </div>
                 </div>
             </div>
             <div class="contact-form">
-                <h3>Send Us a Message</h3>
+                <h3 data-i18n="message-title">Send Us a Message</h3>
                 <form id="contactForm">
                     <div class="form-group">
-                        <label for="name">Full Name</label>
+                        <label for="name" data-i18n="form-name">Full Name</label>
                         <input type="text" id="name" name="name" required>
                     </div>
                     <div class="form-group">
-                        <label for="email">Email Address</label>
+                        <label for="email" data-i18n="form-email">Email Address</label>
                         <input type="email" id="email" name="email" required>
                     </div>
                     <div class="form-group">
-                        <label for="phone">Phone Number</label>
+                        <label for="phone" data-i18n="form-phone">Phone Number</label>
                         <input type="tel" id="phone" name="phone">
                     </div>
                     <div class="form-group">
-                        <label for="subject">Subject</label>
+                        <label for="subject" data-i18n="form-subject">Subject</label>
                         <select id="subject" name="subject" required>
-                            <option value="">Select an option</option>
-                            <option value="Sales Inquiry">Generator Sales</option>
-                            <option value="Rental Inquiry">Generator Rental</option>
-                            <option value="Technical Support">Technical Support</option>
-                            <option value="Other">Other</option>
+                            <option value="" data-i18n="form-select">Select an option</option>
+                            <option value="Sales Inquiry" data-i18n="form-sales">Generator Sales</option>
+                            <option value="Rental Inquiry" data-i18n="form-rental">Generator Rental</option>
+                            <option value="Technical Support" data-i18n="form-support">Technical Support</option>
+                            <option value="Other" data-i18n="form-other">Other</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="message">Message</label>
+                        <label for="message" data-i18n="form-message">Message</label>
                         <textarea id="message" name="message" rows="5" required></textarea>
                     </div>
-                    <button type="submit" class="btn-primary">Send Message</button>
+                    <button type="submit" class="btn-primary" data-i18n="form-submit">Send Message</button>
                 </form>
             </div>
         </div>
         <div class="map-container">
-            <h3>Find Us</h3>
+            <h3 data-i18n="map-title">Find Us</h3>
             <div class="map">
                 <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3018.1839848947604!2d22.593811676564746!3d40.35409267144394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1357fd7f6241a193%3A0x4d22880c0f6e27f7!2z16DOn9Cf0KXQoNKE0KPQhtCU0JfQoy3QodCi0JDQktCg0JjQlNCT0KMg0J4u0JUu!5e0!3m2!1sen!2sgr!4v1712334350147!5m2!1sen!2sgr"
@@ -366,43 +382,43 @@
         <div class="footer-content">
             <div class="footer-logo">
                 <h2>Pourtsidis<span>Generators</span></h2>
-                <p>Your Trusted Power Partner</p>
+                <p data-i18n="footer-tagline">Your Trusted Power Partner</p>
             </div>
             <div class="footer-links">
                 <div class="footer-column">
-                    <h3>Quick Links</h3>
+                    <h3 data-i18n="footer-quick">Quick Links</h3>
                     <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#products">Products</a></li>
+                        <li><a href="#home" data-i18n="nav-home">Home</a></li>
+                        <li><a href="#about" data-i18n="nav-about">About Us</a></li>
+                        <li><a href="#products" data-i18n="nav-products">Products</a></li>
                         <li><a href="#services">Rental Services</a></li>
                         <li><a href="#why-us">Why Choose Us</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#contact" data-i18n="nav-contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
-                    <h3>Products</h3>
+                    <h3 data-i18n="footer-products">Products</h3>
                     <ul>
-                        <li><a href="#">Residential Generators</a></li>
-                        <li><a href="#">Commercial Generators</a></li>
-                        <li><a href="#">Industrial Generators</a></li>
-                        <li><a href="#">Portable Generators</a></li>
-                        <li><a href="#">Spare Parts</a></li>
+                        <li><a href="#" data-i18n="product-residential">Residential Generators</a></li>
+                        <li><a href="#" data-i18n="product-commercial">Commercial Generators</a></li>
+                        <li><a href="#" data-i18n="product-industrial">Industrial Generators</a></li>
+                        <li><a href="#" data-i18n="product-portable">Portable Generators</a></li>
+                        <li><a href="#" data-i18n="product-parts">Spare Parts</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
-                    <h3>Services</h3>
+                    <h3 data-i18n="footer-services">Services</h3>
                     <ul>
-                        <li><a href="#">Generator Rental</a></li>
-                        <li><a href="#">Maintenance Plans</a></li>
-                        <li><a href="#">Installation Services</a></li>
-                        <li><a href="#">Emergency Support</a></li>
-                        <li><a href="#">Consultation</a></li>
+                        <li><a href="#" data-i18n="service-rental">Generator Rental</a></li>
+                        <li><a href="#" data-i18n="service-maintenance">Maintenance Plans</a></li>
+                        <li><a href="#" data-i18n="service-installation">Installation Services</a></li>
+                        <li><a href="#" data-i18n="service-emergency">Emergency Support</a></li>
+                        <li><a href="#" data-i18n="service-consultation">Consultation</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-social">
-                <h3>Connect With Us</h3>
+                <h3 data-i18n="footer-connect">Connect With Us</h3>
                 <div class="social-icons">
                     <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                     <a href="#" aria-label="Car.gr"><i class="fas fa-car"></i></a>
@@ -411,11 +427,11 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2025 Pourtsidis Generators. All Rights Reserved.</p>
+            <p data-i18n="footer-rights">&copy; 2025 Pourtsidis Generators. All Rights Reserved.</p>
             <div class="footer-legal">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
-                <a href="#">Cookie Policy</a>
+                <a href="#" data-i18n="footer-privacy">Privacy Policy</a>
+                <a href="#" data-i18n="footer-terms">Terms of Service</a>
+                <a href="#" data-i18n="footer-cookie">Cookie Policy</a>
             </div>
         </div>
     </div>
