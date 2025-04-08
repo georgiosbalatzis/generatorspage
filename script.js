@@ -67,19 +67,16 @@ document.addEventListener('DOMContentLoaded', function() {
             'about-title': 'About Us',
             'about-subtitle': 'Your Trusted Power Partner in Greece',
             'about-p1': 'Since 2005, Pourtsidis Generators has been providing high-quality generator solutions to businesses, construction sites, events, and homeowners throughout Greece. Based in Athens with service centers across major islands, we pride ourselves on our technical expertise and commitment to customer satisfaction.',
-            'about-p2': 'Our team of certified engineers and technicians ensures that every generator we sell or rent meets the highest standards of performance and reliability, even in the most challenging environments.',
-            'about-highlight-1': '15+ years of experience in the Greek market',
-            'about-highlight-2': 'Nationwide service network',
+            'about-highlight-1': '34+ years of experience in the Greek market',
             'about-highlight-3': '24/7 technical support',
-            'about-highlight-4': 'Certified maintenance team',
+
 
             // Products section
             'products-title': 'Our Generator Products',
-            'products-subtitle': 'Browse our extensive selection of high-quality generators for sale',
             'tab-residential': 'Residential',
             'tab-commercial': 'Commercial',
             'tab-industrial': 'Industrial',
-            'tab-portable': 'Portable',
+
 
             // Residential products
             'residential-title': 'Home Standby Generators',
@@ -233,21 +230,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // About section
             'about-title': 'Σχετικά με Εμάς',
-            'about-subtitle': 'Ο Αξιόπιστος Συνεργάτης Ενέργειας στην Ελλάδα',
-            'about-p1': 'Από το 2005, η Πουρτσίδης Generators παρέχει λύσεις γεννητριών υψηλής ποιότητας σε επιχειρήσεις, εργοτάξια, εκδηλώσεις και ιδιοκτήτες σπιτιών σε όλη την Ελλάδα. Με έδρα την Αθήνα και κέντρα εξυπηρέτησης στα μεγαλύτερα νησιά, είμαστε υπερήφανοι για την τεχνική μας εξειδίκευση και τη δέσμευσή μας στην ικανοποίηση των πελατών.',
-            'about-p2': 'Η ομάδα των πιστοποιημένων μηχανικών και τεχνικών μας διασφαλίζει ότι κάθε γεννήτρια που πουλάμε ή ενοικιάζουμε πληροί τα υψηλότερα πρότυπα απόδοσης και αξιοπιστίας, ακόμη και στα πιο απαιτητικά περιβάλλοντα.',
-            'about-highlight-1': '15+ χρόνια εμπειρίας στην ελληνική αγορά',
-            'about-highlight-2': 'Πανελλαδικό δίκτυο εξυπηρέτησης',
+            'about-p1': 'Από το 1991, η Π.Πουρτσίδης - Μ.Σταυριδης Ο.Ε. παρέχει λύσεις γεννητριών υψηλής ποιότητας σε επιχειρήσεις, εργοτάξια, εκδηλώσεις και ιδιοκτήτες σπιτιών σε όλη την Ελλάδα. Στον χώρο μας μπορείτε να βρείτε την μεγαλύτερη γκάμα γεννητριών, κινητήρων ακόμη και ανταλλακτικών. ',
+            'about-highlight-1': '34+ χρόνια εμπειρίας στην ελληνική αγορά',
             'about-highlight-3': 'Τεχνική υποστήριξη 24/7',
-            'about-highlight-4': 'Πιστοποιημένη ομάδα συντήρησης',
+
 
             // Products section
-            'products-title': 'Τα Προϊόντα Γεννητριών μας',
-            'products-subtitle': 'Περιηγηθείτε στην εκτεταμένη συλλογή γεννητριών υψηλής ποιότητας προς πώληση',
-            'tab-residential': 'Οικιακές',
-            'tab-commercial': 'Επαγγελματικές',
-            'tab-industrial': 'Βιομηχανικές',
-            'tab-portable': 'Φορητές',
+            'products-title': 'Τα Προϊόντα μας',
+            'tab-residential': 'Γεννήτριες',
+            'tab-commercial': 'Κινητήρες',
+            'tab-industrial': 'Ανταλλακτικά',
 
             // Residential products
             'residential-title': 'Γεννήτριες Οικιακής Εφεδρείας',
@@ -374,7 +366,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
             'product-residential': 'Οικιακές Γεννήτριες',
             'product-commercial': 'Επαγγελματικές Γεννήτριες',
-            'product-industrial': 'Βιομηχανικές Γεννήτριες',
             'product-portable': 'Φορητές Γεννήτριες',
             'product-parts': 'Ανταλλακτικά',
 
